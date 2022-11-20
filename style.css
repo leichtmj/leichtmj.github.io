@@ -11,16 +11,19 @@ html {
 @font-face {
     font-family: "Glacial Indifference";
     src: url("./fonts/GlacialIndifference-Regular.otf");
+    color: white;
 }
 
 @font-face {
     font-family: "Glacial Indifference Bold";
     src: url("./fonts/GlacialIndifference-Bold.otf");
+    color: white;
 }
 
 @font-face {
     font-family: "Glacial Indifference Italic";
     src: url("./fonts/GlacialIndifference-Italic.otf");
+    color: white;
 }
 
 body {
@@ -49,7 +52,6 @@ body {
     margin-top: 20px;
     font-family: "Glacial Indifference";
     font-size: 18px;
-    color: white;
     display: inline-block;
     margin-right: 50px;
     text-decoration: none;
