@@ -69,6 +69,13 @@ body {
     background-color: white;
 }
 
+#about > h1{
+    color: black;
+}
+
+#test {
+    color: black;
+}
   
 .sticky {
     position: fixed;
