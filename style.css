@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Glacial Indifference";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url("./fonts/GlacialIndifference-Regular.otf");
+}
+
+@font-face {
+    font-family: "Glacial Indifference Bold";
+    src: url("./fonts/GlacialIndifference-Bold.otf");
+}
+
+@font-face {
+    font-family: "Glacial Indifference Italic";
+    src: url("./fonts/GlacialIndifference-Italic.otf");
+}
+
+body {
+    background-color: #0C1233;
+}
+
+#particles-js {
+    height: 1080px;
+    background-color: #0C1233;
+    font-family: "Glacial Indifference";
+    color: white;
+}
+
+
+#homeH {
+    margin-left: 1260px;
+}
+
+#header {
+    padding-bottom: 20px;
+    box-shadow: 5px 0px 5px;
+    background-color: #0C1233;
+}
+
+#header > a {
+    margin-top: 20px;
+    font-family: "Glacial Indifference";
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+#contactH {
+    color: #2E86FE;
+    border: solid 2px #2E86FE;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#about {
+    height: 1080px;
+    background-color: white;
+}
+
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+.sticky + .content {
+    padding-top: 102px;
+}
+
+#name {
+    font-size: 75px;
+    font-family: "Glacial Indifference Bold";
+}
+
+#knowMore {
+    color: #2E86FE;
+    border: solid 2px #2E86FE;
+    border-radius: 25px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
