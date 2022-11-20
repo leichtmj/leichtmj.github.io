@@ -32,7 +32,7 @@ body {
 }
 
 #particles-js {
-    height: 1080px;
+    height: 100%;
     background-color: #0C1233;
     font-family: "Glacial Indifference";
     color: white;
@@ -45,7 +45,6 @@ body {
 
 #header {
     padding-bottom: 20px;
-    box-shadow: 5px 0px 5px;
     background-color: #0C1233;
 }
 
@@ -74,11 +73,8 @@ body {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
-}
-  
-.sticky + .content {
-    padding-top: 102px;
+    width: 100%;
+    box-shadow: 5px 0px 5px black;
 }
 
 #name {
@@ -93,4 +89,56 @@ body {
     padding: 10px;
     display: inline-block;
     text-decoration: none;
+    margin-top:25px;
+}
+
+#welcome {
+    margin: 250px;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.container {
+    position: relative;
+    height: 1080px;
+}
+
+.box {
+    position: absolute;
+}
+
+.stack-top {
+    z-index: 9;
+}
+
+.first {
+    animation: 2s anim-lineUp ease-out;
+}
+
+.second {
+    animation: 3s anim-lineUp ease-out;
+}
+
+.third {
+    animation: 4s anim-lineUp ease-out;
+}
+
+.fourth {
+    animation: 5s anim-lineUp ease-out;
 }

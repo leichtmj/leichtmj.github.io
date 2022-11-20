@@ -12,17 +12,14 @@ function create(tag, parent, text=null, classs=null, id=null) {
 
 let body = document.querySelector("body")
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {fixedHeader()};
 
-// Get the header
 var header = document.getElementById("header");
 
-// Get the offset position of the navbar
+
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function fixedHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
