@@ -14,7 +14,7 @@ let body = document.querySelector("body")
 
 window.onscroll = function() {fixedHeader()};
 
-var header = document.getElementById("header");
+var header = document.getElementsByClassName("header");
 
 
 var sticky = header.offsetTop;
@@ -27,7 +27,7 @@ function fixedHeader() {
   }
 }
 
-//
+//PARTICULES
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -115,7 +115,7 @@ class Particle {
 
 function hasshin(){
     particleArray = [];
-    let numberOfParticles = (canvas.height * canvas.width) / 9000;
+    let numberOfParticles = (canvas.height * canvas.width) / 15000;
     for(let i = 0; i < numberOfParticles; i++){
         let size = Math.random() * 5 + 1; //taille random entre 1 et 5
         let x = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2); //position x random entre 0 et la largeur du canvas
@@ -181,3 +181,15 @@ window.addEventListener('mouseout', function(){
 
 hasshin();
 animate();
+
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function displayNavBar() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+	}
+}

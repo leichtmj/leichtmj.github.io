@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Jimmy LEICHTMANN Portfolio</title>
 </head>
 <body>
 
 
 
-<section id="header">
-    <a href="https://youtube.com" target="test" id="homeH">Accueil</a>
+<section id="myTopnav" class="topnav header">
+    <a href="https://youtube.com" target="test" id="homeH" class="active">Accueil</a>
     <a href="#about">À propos</a>
     <a href="https://youtube.com" target="test">Projets</a>
     <a href="https://youtube.com" target="test">Compétences</a>
     <a href="https://youtube.com" target="test" id="contactH">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="displayNavBar()"><i class="fa fa-bars"></i></a>
 </section>
 
 <section class="container">
@@ -36,7 +38,17 @@
         
 <section id="about">
     <h1>À propos</h1>
-    <p id="test">Oui bon c'est pas fini non plus</p>
+    <h1>Qui suis-je ?</h1>
+    <div id="text-about">
+        <p class="bc">
+            Lors de mes trois premiers semestre en BUT, j'ai découvert les environnements de programmation orientés objet
+            (C# .NET Core, PHP, Python) et web (HTML, CSS, JS) au sein de différents projets, reposant sur des diagrammes 
+            de conception UML.
+            <br>
+            De plus, la réforme du programme m'a permis de bénéficier d'une sensibilisation accrue au droit numérique et au RGPD.
+        </p>
+        <a href="#projects" class="bc">Découvrir les projets</a>
+    </div>
 </section>
 
 
@@ -46,7 +58,7 @@
 
 
     <script src="js/main.js" defer></script>
-    <script type="text/javascript" src="js/particles.min.js" defer></script>
-    <script type="text/javascript" src="js/app.js" defer></script>
+    <!-- <script type="text/javascript" src="js/particles.min.js" defer></script>
+    <script type="text/javascript" src="js/app.js" defer></script> -->
 </body>
 </html>
