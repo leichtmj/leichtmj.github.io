@@ -1,3 +1,7 @@
+window.onload = function() {
+	document.location.hash = "myTopnav";
+}
+
 function create(tag, parent, text=null, classs=null, id=null) {
 	let element = document.createElement(tag)
 	if (text)
