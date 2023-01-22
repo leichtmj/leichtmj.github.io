@@ -2,7 +2,8 @@
     padding: 0px;
     margin: 0px;
     font-family: "Glacial Indifference";
-    color: white;
+    /* color: white; */
+    /* background-color: #0C1233; */
 }
 
 html {
@@ -67,27 +68,29 @@ body {
 
 #about {
     height: 1080px;
+    color: #0C1233;
     background-color: white;
 }
 
-#about > h1{
-    color: black;
+#about > #text-about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 25px;
+    padding: 15%;
+
 }
 
-.bc {
-    color: black;
+#about > h1 {
+    font-size: 75px;
+    font-family: "Glacial Indifference Bold";
 }
   
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 5px 0px 5px black;
-} */
 
 #name {
     font-size: 75px;
     font-family: "Glacial Indifference Bold";
+    color: white;
 }
 
 #knowMore {
@@ -100,6 +103,10 @@ body {
     margin-top:25px;
 }
 
+#text-about > a {
+    width: 250px;
+}
+
 #knowMore:hover {
     background-color: #2E86FE;
     color: white;
@@ -107,6 +114,10 @@ body {
 
 #welcome {
     margin: 12%;
+}
+
+#welcome > p {
+    color: white;
 }
 
 @keyframes anim-lineUp {
@@ -141,25 +152,29 @@ body {
     z-index: 9;
 }
 
+@media (prefers-reduced-motion: no-preference) {
 .first {
     animation: 2s anim-lineUp ease-out;
 }
+}
 
+@media (prefers-reduced-motion: no-preference) {
 .second {
     animation: 3s anim-lineUp ease-out;
 }
+}
 
+@media (prefers-reduced-motion: no-preference) {
 .third {
     animation: 4s anim-lineUp ease-out;
 }
+}
 
+
+@media (prefers-reduced-motion: no-preference) {
 .fourth {
     animation: 5s anim-lineUp ease-out;
 }
-
-#text-about {
-    display: flex;
-    flex-direction: column;
 }
 
 /* Add a black background color to the top navigation */
@@ -227,4 +242,77 @@ body {
   #myTopnav {
     display: block;
   }
+}
+
+.transition {
+    height: 8vw;
+    width: 90%;
+    margin: -4vw 0px -4vw 0px;
+    transform: rotate(-4deg) scale(1.2, 1);
+    background-color: #0C1233;
+}
+
+#projects {
+    height: 1080px;
+    background-color: #0C1233;
+    color: white;
+    margin-top: 25%;
+    margin-left: 20%;
+}
+
+.displayproject {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    height: 500px;
+    width: 65%;
+    justify-content: center;
+    align-items: stretch;
+
+
+}
+
+.d{
+    flex-direction: column;
+}
+
+.deccUp {
+    margin-top: 25px;
+}
+
+.decc {
+    margin-left: 25px;
+}
+
+.titleProject {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.detailProject {
+    width: 80%;
+    flex-direction: column;
+    /* background-color: blue; */
+    /* height: 100%; */
+    background-color: #4b5692;
+    border-radius: 10px 10px 10px 10px;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.imgProject {
+    /* width: 55%; */
+    /* background-color: green; */
+    border-radius: 10px 10px 10px 10px;
+}
+
+.proglanguages {
+    /* align-self: flex-end; */
+    font-weight: bold;
+    color: #2E86FE;
+}
+
+div {
+    display: flex;
 }

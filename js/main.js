@@ -119,13 +119,13 @@ class Particle {
 
 function hasshin(){
     particleArray = [];
-    let numberOfParticles = (canvas.height * canvas.width) / 15000;
+    let numberOfParticles = (canvas.height * canvas.width) / 12000;
     for(let i = 0; i < numberOfParticles; i++){
         let size = Math.random() * 5 + 1; //taille random entre 1 et 5
         let x = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2); //position x random entre 0 et la largeur du canvas
         let y = (Math.random() * ((window.innerHeight - size * 2) - (size * 2)) + size * 2); //position y random entre 0 et la largeur du canvas
-        let directionX = (Math.random() * 5) - 2.5; //direction x random entre -2.5 et 2.5
-        let directionY = (Math.random() * 5) - 2.5; //direction y random entre -2.5 et 2.5
+        let directionX = (Math.random() * 1.5) - 1.5; //direction x random entre -2.5 et 2.5
+        let directionY = (Math.random() * 1.5) - 1.5; //direction y random entre -2.5 et 2.5
         let color = '#1523ef';
 
         particleArray.push(new Particle(x, y, directionX, directionY, size, color));
@@ -182,11 +182,8 @@ window.addEventListener('mouseout', function(){
     mouse.y = undefined;
 })
 
-
 hasshin();
 animate();
-
-
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function displayNavBar() {
@@ -197,3 +194,15 @@ function displayNavBar() {
 	  x.className = "topnav";
 	}
 }
+
+
+//Animation scroll
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('first');
+        }
+    })
+})
+
+observer.observe(document.querySelector('#text-about'));
