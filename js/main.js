@@ -1,5 +1,5 @@
 window.onload = function() {
-	document.location.hash = "myTopnav";
+	//document.location.hash = "myTopnav";
 }
 
 function create(tag, parent, text=null, classs=null, id=null) {
