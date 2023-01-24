@@ -206,3 +206,44 @@ const observer = new IntersectionObserver(entries => {
 })
 
 observer.observe(document.querySelector('#text-about'));
+
+
+let allImagesToLightbox = document.querySelectorAll(".lightbox")
+for(let image of allImagesToLightbox) {
+	image.addEventListener("click", function() {
+		let bg = create("div", body, null, null, "bg")
+		let box = create("div", bg, null, null, "box")
+
+		let imageInBox = create("img", box)
+		imageInBox.src = "./img/troncorama.png"
+
+		let button = create("p", box, "X", null, "closeButton")
+		button.addEventListener("click", function() {
+			// oust = animation de 1s 
+			box.classList.add("atable")
+			// attente 1s pour faire tout disparaître
+			setTimeout(function() {
+				bg.remove();
+			}, 1000)
+		})
+		body.addEventListener("keyup", function(event) {
+			if (event.key == "Escape") {
+				// oust = animation de 1s 
+				box.classList.add("atable")
+				// attente 1s pour faire tout disparaître
+				setTimeout(function() {
+					bg.remove();
+				}, 1000)
+			}
+		})
+        bg.addEventListener("click", function() {
+			// oust = animation de 1s 
+			box.classList.add("atable")
+			// attente 1s pour faire tout disparaître
+			setTimeout(function() {
+				bg.remove();
+			}, 1000)
+		})
+
+	})
+}
