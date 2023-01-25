@@ -253,7 +253,7 @@ body {
 }
 
 #projects {
-    height: 1080px;
+    height: 50%;
     background-color: #0C1233;
     color: white;
     margin-top: 25%;
@@ -395,4 +395,14 @@ div {
 	transform: scale(1.1);
 	background-color: orange;
 	color:  white;
+}
+
+
+#footer {
+    background-color: #0C1233;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-top: 25%;
+    margin-left: 20%;
 }
