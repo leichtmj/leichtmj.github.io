@@ -67,7 +67,7 @@ body {
 }
 
 #about {
-    height: 1080px;
+    height: 900px;
     color: #0C1233;
     background-color: white;
 }
@@ -248,12 +248,20 @@ body {
     height: 8vw;
     width: 100%;
     margin: -4vw 0px -4vw 0px;
-    transform: rotate(-4deg) scale(1.2, 1);
+    transform: rotate(-4deg) scale(1.01, 1);
     background-color: #0C1233;
 }
 
+.transition2 {
+    height: 8vw;
+    width: 100%;
+    margin: -4vw 0px -4vw 0px;
+    transform: rotate(-4deg) scale(1.01, 1);
+    background-color: white;
+}
+
 #projects {
-    height: 50%;
+    height: 350vh;
     background-color: #0C1233;
     color: white;
     margin-top: 25%;
@@ -399,10 +407,66 @@ div {
 
 
 #footer {
-    background-color: #0C1233;
+    /* background-color: white; */
     color: white;
     height: 100px;
     width: 100%;
-    margin-top: 25%;
-    margin-left: 20%;
+    padding-top: 15%;
+}
+
+
+#contact {
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.text-footer {
+    text-align: center;
+}
+
+#right {
+    float: right;
+    /* margin-right: 10%; */
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact > h1 {
+    font-size: 35px;
+}
+
+#contact > p {
+    font-size: 25px;
+}
+
+#github {
+    color: white;
+}
+
+#up {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0C1233;
+    border: 3px solid #2E86FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: #2E86FE;
+}
+
+#up:hover {
+    background-color: #2E86FE;
+    color: white;
 }

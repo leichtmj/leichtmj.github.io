@@ -11,14 +11,14 @@
 </head>
 <body>
 
-
+<section id="w"></section>
 
 <section id="myTopnav" class="topnav">
-    <a href="https://youtube.com" target="test" id="homeH" class="active">Accueil</a>
+    <a href="#myTopnav" id="homeH" class="active">Accueil</a>
     <a href="#about">À propos</a>
     <a href="#projects" >Projets</a>
-    <!-- <a href="https://youtube.com" target="test">Compétences</a> -->
-    <a href="#footer" id="contactH">Contact</a>
+    <!-- <a href="" target="test">Compétences</a> WIP -->
+    <a href="#contact" id="contactH">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="displayNavBar()"><i class="fa fa-bars"></i></a>
 </section>
 
@@ -41,6 +41,7 @@
         <div id="text-about">
             <h1 class="first">Qui suis-je ?</h1>
             <p class="bc second">
+                Bonjour ! Je m'appelle Jimmy Leichtmann, j'ai 19 ans et j'aime développer dans mon temps libre.<br>
                 Lors de mes trois premiers semestre en BUT, j'ai découvert les environnements de programmation orientés objet
                 (C# .NET Core, PHP, Python) et web (HTML, CSS, JS) au sein de différents projets, reposant sur des diagrammes 
                 de conception UML.
@@ -74,7 +75,7 @@
                     <li class="decc">Soutenance orale avec questions du jury</li>
                 </ul>
             </div>
-            <div class="proglanguages">Figma -Sphinx</div>
+            <div class="proglanguages">Figma - Sphinx</div>
         </div>
         <img alt="coucou" src="./img/logos/maquette105.png" class="imgProject" title="Cliquez pour découvrir le projet">
     </div>
@@ -95,7 +96,7 @@
             </div>
             <div class="proglanguages">C# - Git - Monogame</div>
         </div>
-        <iframe src="https://www.youtube.com/embed/UNQxvMSKcTE?ab_channel=jim&autoplay=1&mute=1&loop=1&controls=0" class="" title="Cliquez pour découvrir le projet" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/UNQxvMSKcTE?ab_channel=jim&autoplay=1&mute=1&loop=1&controls=0&playlist=UNQxvMSKcTE" class="" title="Cliquez pour découvrir le projet" frameborder="0"></iframe>
     </div>
 
     <h1 class="cat_projects">Projet universitaire - 2022</h1>
@@ -121,19 +122,52 @@
         <img alt="coucou" src="./img/pochita.png" class="imgProject rescale lightbox" title="Cliquez pour découvrir le projet">
     </div>
 
+
+    <h1 class="cat_projects">Projet universitaire - 2022</h1>
+
+    <div class="displayproject">
+
+        <div class="d">
+            <h1 class="titleProject">Développement d'un site web Laravel</h1>
+            <div class="detailProject">
+                Sujet : Tesla souhaite une refonte complète de son système d’information avec un nouveau site Web pour la
+                présentation et la vente de ses produits.
+                <br>
+                <ul class="deccUp">
+                    <li class="decc">Diagrammes de conception UML</li>
+                    <li class="decc">Création d'une base PostgreSQL</li>
+                    <li class="decc">Développement avec le framework Laravel</li>
+                    <li class="decc">Cryptage des mots de passe et respect du RGPD</li>
+                </ul>
+            </div>
+            <div class="proglanguages">PHP - Laravel - SQL</div>
+        </div>
+        <img alt="coucou" src="./img/Tesla-logo.png" class="imgProject">
+    </div>
+
 </section>
 
+<div class="transition2"></div>
+
+<section id="contact">
+    <h1 class="text-footer" class="first">Contact</h1>
+    <p class="second text-footer">Vous pouvez me contacter par mail à l'adresse suivante : <span> <a href="mailto:jimmy.leichtmann@etu.univ-smb.fr">jimmy.leichtmann@etu.univ-smb.fr</a></span></p>
+        
+</section>
+
+<div class="transition"></div>
 
 <section id="footer">
-    <div id="text-footer">
-        <h1 class="first">Contact</h1>
-        <p class="bc second">
-            Vous pouvez me contacter par mail à l'adresse suivante : <a href="mailto:jimmy.leichtmann@etu.univ-smb.fr">
-
-
-
+        <p>© 2023 Jimmy LEICHTMANN <span id="right"><a id="github" href="https://github.com/leichtmj/leichtmj.github.io" target="_blank">Découvrir le repository sur Github</a></span></p>
+        <p class="text-footer">Site réalisé en pure HTML, CSS et JavaScript.
+            <br>
+            Merci d'avoir lu jusqu'au bout :) !
+        </p>
 </section>
 
+
+
+<a id="up" href="#w">↑</a>
 
 
     <script src="js/main.js" defer></script>
