@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +12,7 @@
 </head>
 <body>
 
-<section id="w"></section>
+<section id="welp"></section>
 
 <section id="myTopnav" class="topnav">
     <a href="#myTopnav" id="homeH" class="active">Accueil</a>
@@ -22,7 +23,7 @@
     <a href="javascript:void(0);" class="icon" onclick="displayNavBar()"><i class="fa fa-bars"></i></a>
 </section>
 
-<section class="container">
+<section class="contenant">
 
     <canvas id="canvas1" class="box"></canvas>
     
@@ -35,114 +36,125 @@
 
 </section>
 
-
-        
 <section id="about">
-        <div id="text-about">
-            <h1 class="first">Qui suis-je ?</h1>
-            <p class="bc second">
-                Bonjour ! Je m'appelle Jimmy Leichtmann, j'ai 19 ans et j'aime développer dans mon temps libre.<br>
-                Lors de mes trois premiers semestre en BUT, j'ai découvert les environnements de programmation orientés objet
-                (C# .NET Core, PHP, Python) et web (HTML, CSS, JS) au sein de différents projets, reposant sur des diagrammes 
-                de conception UML.
-                <br>
-                De plus, la réforme du programme m'a permis de bénéficier d'une sensibilisation accrue au droit numérique et au RGPD.
-            </p>
-            <a href="#projects" id="knowMore" class="third">Découvrir les projets ↓</a>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <article class="col-md-6">
+                    <h1 class="first">Qui suis-je ?</h1>
+                    <p class="second text-about">
+                        Bonjour ! Je m'appelle Jimmy Leichtmann, j'ai 19 ans et j'aime développer dans mon temps libre.<br>
+                        Lors de mes trois premiers semestre en BUT, j'ai découvert les environnements de programmation orientés objet
+                        (C# .NET Core, PHP, Python) et web (HTML, CSS, JS) au sein de différents projets, reposant sur des diagrammes 
+                        de conception UML.
+                        <br>
+                        De plus, la réforme du programme m'a permis de bénéficier d'une sensibilisation accrue au droit numérique et au RGPD.
+                    </p>
+                    <a href="#projects" id="knowMore" class="third">Découvrir les projets ↓</a>
+                </article>
+            </div>
         </div>
+    </div>
 </section>
 
 
 <div class="transition"></div>
 
-<section id="projects">
-    <h1 class="cat_projects">Projet universitaire - 2021</h1>
-
-    <div class="displayproject">
-
-        <div class="d">
-            <h1 class="titleProject">Élaboration d'une maquette</h1>
-            <div class="detailProject">
-               
-                Dans un contexte professionnel, un client (ici, la mairie d'Annecy) demande de formaliser ses attentes liées à la création d'une application mobile.
-                <br>
-                Ce projet m'a permis de me familiariser avec la conduite de projet à partir d'un besoin client.
-                <ul class="deccUp">
+<section id="projects" class="container-fluid">
+    
+    <div class="container">
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7">
+                <h1 class="cat_projects">Projet universitaire - 2021</h1>
+                <h1 class="titleProject">Élaboration d'une maquette</h1>
+                <p class="detailProject_list">Dans un contexte professionnel, un client (ici, la mairie d'Annecy) demande de formaliser ses attentes liées à la création d'une application mobile.
+                    <br>
+                    Ce projet m'a permis de me familiariser avec la conduite de projet à partir d'un besoin client.
+                </p>
+                <ul class="list">
                     <li class="decc">Communication avec le client</li>
                     <li class="decc">Questionnaire destiné aux futurs utilisateurs</li>
                     <li class="decc">Représentation des personas</li>
                     <li class="decc">Présentation d'une maquette de l'application</li>
                     <li class="decc">Soutenance orale avec questions du jury</li>
                 </ul>
-            </div>
-            <div class="proglanguages">Figma - Sphinx</div>
+                <div class="proglanguages"><span class="keywords"> <a href="https://www.figma.com/fr/" target="_blank">Figma</a></span> - <span class="keywords"><a href="https://www.lesphinx-developpement.fr/logiciels/sondage-en-ligne-sphinx-declic/" target="_blank">Sphinx</a></span></div>
+            </article>
+            <article class="col-lg-6 col-xl-5 col-xxl-5">
+                <a href="https://www.figma.com/proto/kOUzCVNeO9ChmzeQ5Pvi9T/Up'Annecy?node-id=47%3A56&starting-point-node-id=161%3A4" target="_blank">                
+                    <img alt="coucou" src="./img/logos/maquette105.png" class="imgProject img-fluid" title="Cliquez pour découvrir le projet">
+                </a>
+            </article>
         </div>
-        <img alt="coucou" src="./img/logos/maquette105.png" class="imgProject" title="Cliquez pour découvrir le projet">
     </div>
 
-    <h1 class="cat_projects">Projet universitaire - 2021</h1>
-
-    <div class="displayproject">
-
-        <div class="d">
-            <h1 class="titleProject">Développement d'un jeu en 2D</h1>
-            <div class="detailProject">
-               
-                Pour mettre en application les notions apprises pendant le 1er semestre, nous avons dû, par groupe de 3,
-                développer un jeu en 2D en utilisant le langage C# ainsi que le framework Monogame.
-                <br><br>
-                Ce jeu contenait un système de combat dactylographique, où le joueur devait taper les lettres et mots affichés à l'écran,
-                et gagnait des points en fonction de la rapidité de ses frappes.
-            </div>
-            <div class="proglanguages">C# - Git - Monogame</div>
+    <div class="container">
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7">
+                <h1 class="cat_projects">Projet universitaire - 2021</h1>
+                <h1 class="titleProject">Développement d'un jeu en 2D</h1>
+                <p class="detailProject">Pour mettre en application les notions apprises pendant le 1er semestre, nous avons dû, par groupe de 3,
+                    développer un jeu en 2D en utilisant le langage C# ainsi que le framework Monogame.
+                    <br><br>
+                    Ce jeu contenait un système de combat dactylographique, où le joueur devait taper les lettres et mots affichés à l'écran,
+                    et gagnait des points en fonction de la rapidité de ses frappes.
+                </p>
+                <div class="proglanguages"><span class="keywords"> <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a></span> - <span class="keywords"><a href="https://github.com/" target="_blank">Github</a></span> - <span class="keywords"> <a href="https://www.monogame.net/" target="_blank">Monogame</a></span></div>
+            </article>
+            <article class="col-lg-6 col-xl-5 col-xxl-5">
+                    <iframe frameborder="0" src="https://www.youtube.com/embed/UNQxvMSKcTE?ab_channel=jim&autoplay=1&mute=1&loop=1&controls=0&playlist=UNQxvMSKcTE" class="vid" title="Cliquez pour découvrir le projet" frameborder="0"></iframe>
+            </article>
         </div>
-        <iframe frameborder="0" src="https://www.youtube.com/embed/UNQxvMSKcTE?ab_channel=jim&autoplay=1&mute=1&loop=1&controls=0&playlist=UNQxvMSKcTE" class="" title="Cliquez pour découvrir le projet" frameborder="0"></iframe>
     </div>
 
-    <h1 class="cat_projects">Projet universitaire - 2022</h1>
 
-    <div class="displayproject">
 
-        <div class="d">
-            <h1 class="titleProject">Développement d'une application de gestion des commandes</h1>
-            <div class="detailProject">
-                En partant d'un besoin exprimé par un client, et nécessitant une interface graphique, l'objectif était 
-                de formaliser les besoins, proposer une conception, implémenter et tester son développement.
-                <br>
-                <ul class="deccUp">
+    <div class="container">
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7">
+                <h1 class="cat_projects">Projet universitaire - 2022</h1>
+                <h1 class="titleProject">Développement d'une application de gestion des commandes</h1>
+                <p class="detailProject_list">En partant d'un besoin exprimé par un client, et nécessitant une interface graphique, l'objectif était 
+                    de formaliser les besoins, proposer une conception, implémenter et tester son développement.
+                    <br>
+                </p>
+                <ul class="list">
                     <li class="decc">Diagrammes d'analyse et de conception</li>
                     <li class="decc">Création d'un MCD selon les besoins</li>
                     <li class="decc">Développement en pattern MVC avec Data binding</li>
                     <li class="decc">Liaison à une base SQL Server</li>
                     <li class="decc">Tests unitaires</li>
                 </ul>
-            </div>
-            <div class="proglanguages">UML - C# - SQL</div>
+                <div class="proglanguages"><span class="keywords"> <a href="https://www.uml.org/" target="_blank">UML</a></span> - <span class="keywords"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a></span> - <span class="keywords"><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></span></div>
+            </article>
+            <article class="col-lg-6 col-xl-5 col-xxl-5">
+                    <img alt="coucou" src="./img/pochita.png" class="imgProject rescale lightbox img-fluid" title="Cliquez pour découvrir le projet">
+            </article>
         </div>
-        <img alt="coucou" src="./img/pochita.png" class="imgProject rescale lightbox" title="Cliquez pour découvrir le projet">
     </div>
 
 
-    <h1 class="cat_projects">Projet universitaire - 2022/2023</h1>
-
-    <div class="displayproject">
-
-        <div class="d">
-            <h1 class="titleProject">Développement d'un site web Laravel</h1>
-            <div class="detailProject">
-                Sujet : Tesla souhaite une refonte complète de son système d’information avec un nouveau site Web pour la
-                présentation et la vente de ses produits.
-                <br>
-                <ul class="deccUp">
+    <div class="container">
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-7 col-xxl-7">
+                <h1 class="cat_projects">Projet universitaire - 2022/2023</h1>
+                <h1 class="titleProject">Développement d'un site web Laravel</h1>
+                <p class="detailProject_list">Sujet : Tesla souhaite une refonte complète de son système d’information avec un nouveau site Web pour la
+                    présentation et la vente de ses produits.
+                    <br>
+                </p>
+                <ul class="list">
                     <li class="decc">Diagrammes de conception UML</li>
                     <li class="decc">Création d'une base PostgreSQL</li>
                     <li class="decc">Développement avec le framework Laravel</li>
                     <li class="decc">Cryptage des mots de passe et respect du RGPD</li>
                 </ul>
-            </div>
-            <div class="proglanguages">PHP - Laravel - SQL</div>
+                <div class="proglanguages"><span class="keywords"> <a href="https://www.php.net/" target="_blank">PHP</a></span> - <span class="keywords"><a href="https://laravel.com/" target="_blank">Laravel</a></span> - <span class="keywords"><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></span></div>
+            </article>
+            <article class="col-lg-6 col-xl-5 col-xxl-5">
+                <img alt="coucou" src="./img/Tesla-logo.png" class="imgProject img-fluid">
+            </article>
         </div>
-        <img alt="coucou" src="./img/Tesla-logo.png" class="imgProject">
     </div>
 
 </section>
@@ -167,7 +179,7 @@
 
 
 
-<a id="up" href="#w">↑</a>
+<a id="up" href="#welp">↑</a>
 
 
     <script src="js/main.js" defer></script>

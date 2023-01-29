@@ -4,10 +4,16 @@
     font-family: "Glacial Indifference";
     /* color: white; */
     /* background-color: #0C1233; */
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @font-face {
@@ -72,13 +78,8 @@ body {
     background-color: white;
 }
 
-#about > #text-about {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.text-about {
     font-size: 25px;
-    padding: 15%;
-
 }
 
 #about > h1 {
@@ -100,7 +101,7 @@ body {
     padding: 10px;
     display: inline-block;
     text-decoration: none;
-    margin-top:25px;
+    margin-top:15px;
 }
 
 #text-about > a {
@@ -138,7 +139,7 @@ body {
     }
   }
 
-.container {
+.contenant {
     position: relative;
     height: 1080px;
     width: 100%;
@@ -246,26 +247,26 @@ body {
 
 .transition {
     height: 8vw;
-    width: 100%;
+    /* width: 100%; */
     margin: -4vw 0px -4vw 0px;
     transform: rotate(-4deg) scale(1.01, 1);
     background-color: #0C1233;
 }
 
 .transition2 {
+    margin-top: 150px;
     height: 8vw;
-    width: 100%;
+    /* width: 100%; */
     margin: -4vw 0px -4vw 0px;
     transform: rotate(-4deg) scale(1.01, 1);
     background-color: white;
 }
 
 #projects {
-    height: 450vh;
+    margin-top: 15%;
     background-color: #0C1233;
     color: white;
-    margin-top: 25%;
-    margin-left: 20%;
+    margin-bottom: 200px;
 }
 
 .displayproject {
@@ -291,6 +292,7 @@ body {
 
 .decc {
     margin-left: 25px;
+    color: white;
 }
 
 .titleProject {
@@ -299,15 +301,45 @@ body {
     color: white;
 }
 
+
+.detailProject_list {
+    /* background-color: blue; */
+    /* height: 100%; */
+    background-color: #4b5692;
+    border-radius: 10px 10px 0px 0px;
+    padding: 25px 25px 0px 25px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: white;
+}
+
 .detailProject {
-    width: 80%;
-    flex-direction: column;
     /* background-color: blue; */
     /* height: 100%; */
     background-color: #4b5692;
     border-radius: 10px 10px 10px 10px;
-    padding: 25px;
+    padding: 25px 25px 25px 25px;
     font-size: 25px;
+    color: white;
+}
+
+.vid {
+    width:  350px;
+    height: 350px;
+    margin-top: 325px;
+}
+
+.list {
+    background-color: #4b5692;
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px 25px 25px 25px;
+    color: white;
+}
+
+.keywords {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 .imgProject {
@@ -329,9 +361,6 @@ body {
     left: 15px;
 }
 
-div {
-    display: flex;
-}
 
 .cat_projects {
     margin-top: 20%;
@@ -421,6 +450,7 @@ div {
     width: 100%;
     padding-top: 15%;
     padding-bottom: 15%;
+    overflow-y: hidden;
 }
 
 .text-footer {
