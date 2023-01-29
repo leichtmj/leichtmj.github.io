@@ -87,6 +87,11 @@ body {
     font-family: "Glacial Indifference Bold";
 }
   
+@media screen and (max-width: 460px) {
+    #name {
+        font-size: 55px;
+    }
+}
 
 #name {
     font-size: 75px;
@@ -224,6 +229,9 @@ body {
     .topnav a.icon {
       float: right;
       display: block;
+    }
+    #name {
+        font-size: 55px;
     }
 }
   
@@ -437,9 +445,10 @@ body {
 #footer {
     /* background-color: white; */
     color: white;
-    height: 100px;
+    height: 500px;
     width: 100%;
     padding-top: 15%;
+    overflow-y: hidden;
 }
 
 
@@ -494,9 +503,8 @@ a {
     border-radius: 50%;
     background-color: #0C1233;
     border: 3px solid #2E86FE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 12px;
+    text-align: center;
     font-size: 2em;
     text-decoration: none;
     color: #2E86FE;
