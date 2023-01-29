@@ -233,6 +233,9 @@ body {
     #name {
         font-size: 55px;
     }
+    .text-about {
+        font-size: 18px;
+    }
 }
   
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -288,6 +291,7 @@ body {
 
 
 }
+ol, ul { list-style-type: disc;}
 
 .d{
     flex-direction: column;
@@ -301,6 +305,14 @@ body {
 .decc {
     margin-left: 25px;
     color: white;
+}
+
+li {
+    list-style-type: circle;
+}
+
+ul {
+    list-style-type: circle;
 }
 
 .titleProject {
@@ -317,7 +329,7 @@ body {
     border-radius: 10px 10px 0px 0px;
     padding: 25px 25px 0px 25px;
     margin-bottom: 0px;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
 }
 
@@ -327,7 +339,7 @@ body {
     background-color: #4b5692;
     border-radius: 10px 10px 10px 10px;
     padding: 25px 25px 25px 25px;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
 }
 
@@ -342,6 +354,7 @@ body {
     border-radius: 0px 0px 10px 10px;
     padding: 25px 25px 25px 25px;
     color: white;
+    font-size: 18px;
 }
 
 .keywords {
@@ -466,6 +479,14 @@ body {
     text-align: center;
 }
 
+.details-footer {
+    font-size: 20px;
+}
+
+#mail:hover {
+    color: #2E86FE;
+}
+
 #right {
     float: right;
     /* margin-right: 10%; */
@@ -511,6 +532,34 @@ a {
 }
 
 #up:hover {
+    background-color: #2E86FE;
+    color: white;
+}
+
+#abilities{
+    height: 500px;
+}
+
+.tri-sec > div {
+    text-align: center;
+    margin:auto;
+}
+
+.tri {
+    color: #2E86FE;
+    border: solid 2px #2E86FE;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.element{
+    text-align: center;
+}
+
+.tri:hover {
     background-color: #2E86FE;
     color: white;
 }

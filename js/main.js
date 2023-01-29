@@ -23,13 +23,13 @@ var header = document.getElementsByClassName("header");
 
 var sticky = header.offsetTop;
 
-function fixedHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function fixedHeader() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
 
 //PARTICULES
 const canvas = document.getElementById('canvas1');
@@ -205,7 +205,7 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-observer.observe(document.querySelector('#text-about'));
+// observer.observe(document.querySelector('#text-about'));
 
 
 let allImagesToLightbox = document.querySelectorAll(".lightbox")
@@ -247,3 +247,42 @@ for(let image of allImagesToLightbox) {
 
 	})
 }
+
+function create(tag, parent, text=null, classs=null, id=null) {
+	let element = document.createElement(tag)
+	if (text)
+		element.appendChild(document.createTextNode(text))
+	parent.appendChild(element)
+	if (classs)
+		element.classList.add(classs)
+	if (id)
+		element.id = id
+	return element
+}
+
+let abilities = document.querySelector(".tri-sec")
+console.log(abilities)
+
+let array = ["Design", "Web", "Développement d'applications", "Logiciels", "Autres"];
+
+let contentDes = ["Figma", "Photoshop", "Premiere Pro", "Aseprite"];
+let contentWeb = ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "Laravel", "PostgreSQL"];
+let contentDév = ["C#", "Python", "Git"];
+let contentLog = ["VirtualBox", "Visual Studio Code", "Visual Studio 2022", "PowerAMC", "Postman", "Github Desktop"];
+let contentAut = contentDes.concat(contentWeb, contentDév, contentLog);
+
+array.forEach(function(item, index) {
+    let div = create("div", abilities, item,"tri");
+    div.classList.add("div");
+    div.addEventListener("click", function() {
+        let souscate = document.querySelectorAll('.element')
+        souscate.forEach(function(item, index) {
+            item.remove();
+        });
+        let namearray = "content" + item.substring(0, 3);
+        let contentarray = eval(namearray);
+        contentarray.forEach(function(item, index) {
+            let div = create("div", abilities, item, "element");
+        });
+    });
+});
