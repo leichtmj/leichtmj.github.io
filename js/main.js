@@ -261,28 +261,56 @@ function create(tag, parent, text=null, classs=null, id=null) {
 }
 
 let abilities = document.querySelector(".tri-sec")
-console.log(abilities)
 
-let array = ["Design", "Web", "Développement d'applications", "Logiciels", "Autres"];
+let array = ["Design", "Web", "Développement d'applications", "Logiciels"];
 
 let contentDes = ["Figma", "Photoshop", "Premiere Pro", "Aseprite"];
 let contentWeb = ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "Laravel", "PostgreSQL"];
 let contentDév = ["C#", "Python", "Git"];
 let contentLog = ["VirtualBox", "Visual Studio Code", "Visual Studio 2022", "PowerAMC", "Postman", "Github Desktop"];
-let contentAut = contentDes.concat(contentWeb, contentDév, contentLog);
 
-array.forEach(function(item, index) {
-    let div = create("div", abilities, item,"tri");
+let urlDes =["./img/logos/figma.png", "./img/logos/photoshop.png", "./img/logos/premierepro.png", "./img/logos/aseprite.png"];
+let urlWeb = ["./img/logos/html.png", "./img/logos/css.png", "./img/logos/js.png", "./img/logos/php.png", "./img/logos/bootstrap.png", "./img/logos/laravel.png", "./img/logos/postgresql.png"];
+let urlDév = ["./img/logos/csharp.png", "./img/logos/python.png", "./img/logos/git.png"];
+let urlLog = ["./img/logos/virtualbox.png", "./img/logos/vscode.png", "./img/logos/visualstudio.png", "./img/logos/poweramc.png", "./img/logos/postman.png", "./img/logos/githubdesktop.png"];
+
+
+let objDes = {
+    "Des": "Des",
+    "url": urlDes
+}
+
+let objWeb = {
+    "Web": "Web",
+    "url": urlWeb
+}
+
+let objDév = {
+    "Dév": "Dév",
+    "url": urlDév
+}
+
+let objLog = {
+    "Log": "Log",
+    "url": urlLog
+}
+
+array.forEach(function(itemC, index) {
+    let div = create("div", abilities, itemC,"tri");
     div.classList.add("div");
     div.addEventListener("click", function() {
         let souscate = document.querySelectorAll('.element')
         souscate.forEach(function(item, index) {
             item.remove();
         });
-        let namearray = "content" + item.substring(0, 3);
+        let namearray = "content" + itemC.substring(0, 3);
         let contentarray = eval(namearray);
         contentarray.forEach(function(item, index) {
-            let div = create("div", abilities, item, "element");
+            let div = create("div", details, item, "element");
+            let arrayAsso = eval("obj" + itemC.substring(0, 3));
+            create("img", div, null, "icon", null).src = arrayAsso.url[index];
         });
     });
 });
+
+var details = create("div", abilities, null, "element-parent");

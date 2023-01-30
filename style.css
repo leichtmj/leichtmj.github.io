@@ -537,10 +537,10 @@ a {
 }
 
 #abilities{
-    height: 500px;
+    height: 1000px;
 }
 
-.tri-sec > div {
+.tri-sec {
     text-align: center;
     margin:auto;
 }
@@ -562,4 +562,19 @@ a {
 .tri:hover {
     background-color: #2E86FE;
     color: white;
+}
+.element {
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.icon {
+    transform: scale(0.5);
+}
+
+.img {
+    width: 375px;
+    height: 550px;
+    border-radius: 25%;
 }
