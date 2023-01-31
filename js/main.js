@@ -16,8 +16,6 @@ function create(tag, parent, text=null, classs=null, id=null) {
 
 let body = document.querySelector("body")
 
-window.onscroll = function() {fixedHeader()};
-
 var header = document.getElementsByClassName("header");
 
 
@@ -205,7 +203,11 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-// observer.observe(document.querySelector('#text-about'));
+let all = document.querySelectorAll('.container')
+all.forEach(element => {
+    observer.observe(element)
+})
+
 
 
 let allImagesToLightbox = document.querySelectorAll(".lightbox")
