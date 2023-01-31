@@ -346,7 +346,7 @@ ul {
 .vid {
     width:  350px;
     height: 350px;
-    margin-top: 325px;
+    margin-top: 225px;
 }
 
 .list {
@@ -368,6 +368,7 @@ ul {
     /* background-color: green; */
     border-radius: 10px 10px 10px 10px;
     /* transform: scale(0.8); */
+    margin-top: 200px;
 
 }
 
@@ -389,8 +390,8 @@ ul {
 }
 
 .rescale {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     cursor: pointer;
     margin-top: 20%;
 }
@@ -577,4 +578,20 @@ a {
     width: 375px;
     height: 550px;
     border-radius: 25%;
+}
+
+.tesla{
+    width: 425px;
+    height: 550px;
+    border-radius: 25%;
+}
+
+.sae105 {
+    width: 275px;
+    height: 450px;
+}
+
+.center {
+    margin-left: 32px;
+    font-style: italic;
 }
