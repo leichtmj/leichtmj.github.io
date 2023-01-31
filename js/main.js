@@ -300,9 +300,14 @@ array.forEach(function(itemC, index) {
     div.classList.add("div");
     div.addEventListener("click", function() {
         let souscate = document.querySelectorAll('.element')
+        let tri = document.querySelectorAll('.tri')
+        tri.forEach(function(item, index) {
+            item.classList.remove("tri-selected");
+        });
         souscate.forEach(function(item, index) {
             item.remove();
         });
+        div.classList.add("tri-selected");
         let namearray = "content" + itemC.substring(0, 3);
         let contentarray = eval(namearray);
         contentarray.forEach(function(item, index) {

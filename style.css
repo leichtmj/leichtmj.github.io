@@ -564,6 +564,12 @@ a {
     background-color: #2E86FE;
     color: white;
 }
+
+.tri-selected {
+    background-color: #2E86FE;
+    color: white;
+}
+
 .element {
     color: white;
     display: inline-block;
