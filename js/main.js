@@ -268,12 +268,12 @@ let array = ["Design", "Web", "Développement d'applications", "Logiciels"];
 
 let contentDes = ["Figma", "Photoshop", "Premiere Pro", "Aseprite"];
 let contentWeb = ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "Laravel", "PostgreSQL"];
-let contentDév = ["C#", "Python", "Git", "Azure"];
+let contentDév = ["C#", "Python", "Git", "WPF", "WinUI", "Azure"];
 let contentLog = ["VirtualBox", "Visual Studio Code", "Visual Studio 2022", "PowerAMC", "Postman", "Github Desktop"];
 
 let urlDes =["./img/logos/figma.png", "./img/logos/photoshop.png", "./img/logos/premierepro.png", "./img/logos/aseprite.png"];
 let urlWeb = ["./img/logos/html.png", "./img/logos/css.png", "./img/logos/js.png", "./img/logos/php.png", "./img/logos/bootstrap.png", "./img/logos/laravel.png", "./img/logos/postgresql.png"];
-let urlDév = ["./img/logos/csharp.png", "./img/logos/python.png", "./img/logos/git.png", "./img/logos/azure.png"];
+let urlDév = ["./img/logos/csharp.png", "./img/logos/python.png", "./img/logos/git.png", "./img/logos/wpf.png", "./img/logos/winui.png", "./img/logos/azure.png"];
 let urlLog = ["./img/logos/virtualbox.png", "./img/logos/vscode.png", "./img/logos/visualstudio.png", "./img/logos/poweramc.png", "./img/logos/postman.png", "./img/logos/githubdesktop.png"];
 
 

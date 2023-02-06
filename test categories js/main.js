@@ -45,3 +45,18 @@ p.forEach(function(item, index) {
         item.children[1].children[0].classList.add("pouf");
     });
 });
+
+function copyID(id) {
+    navigator.clipboard.writeText(id.innerHTML);
+}
+
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
