@@ -17,7 +17,7 @@ let contentDevelopment = ["Web Development", "Mobile Development", "Game Develop
 let contentMarketing = ["Digital Marketing", "Social Media Marketing", "Content Marketing", "Email Marketing", "Search Engine Optimization", "Search Engine Marketing", "Pay Per Click", "Affiliate Marketing", "Marketing Strategy", "Marketing Analytics", "Marketing Automation", "Other Marketing"];
 let contentSales = ["Sales Management", "Sales Strategy", "Sales Training", "Sales Analytics", "Sales Automation", "Other Sales"];
 let contentAll = contentDesign.concat(contentDevelopment, contentMarketing, contentSales);
-
+/*
 array.forEach(function(item, index) {
     let div = create("div", document.body, item);
     div.classList.add("div");
@@ -32,5 +32,16 @@ array.forEach(function(item, index) {
             let div = create("div", document.body, item, "element");
         });
     });
-});
+});*/
 
+let p = document.querySelectorAll('.test');
+p.forEach(function(item, index) {
+    item.addEventListener("mouseover", function() {
+        item.children[1].children[0].classList.remove("pouf");
+    });
+});
+p.forEach(function(item, index) {
+    item.addEventListener("mouseleave", function() {
+        item.children[1].children[0].classList.add("pouf");
+    });
+});
