@@ -44,8 +44,7 @@ ul li::before {
     position: absolute;
     inset: 0;
     border-radius: 60px;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-    opacity: 0;
+    background: linear-gradient(to right top, #051937, #10315c, #1a4c84, #1e68ae, #1b87da);    opacity: 0;
     transition: 0.8s;
 }
 
@@ -59,8 +58,7 @@ ul li::after {
     width: 100%;
     height: 100%;
     border-radius: 60px;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-    transition: 0.5s;
+    background: linear-gradient(to right top, #051937, #10315c, #1a4c84, #1e68ae, #1b87da);    transition: 0.5s;
     filter: blur(15px);
     z-index: -1;
     opacity: 0;
@@ -92,6 +90,7 @@ ul li .title {
     transition: 0.5s;
     transition-delay: 0s;
     font-weight: bold;
+    color: white;
 }
 
 ul li:hover .title {
