@@ -254,6 +254,35 @@ body {
     .text-about {
         font-size: 18px;
     }
+    #about {
+        height: 1300px;
+    }
+    .element-parent {
+        height: 2500px;
+    }
+    #contact {
+        height: 2000px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    #name {
+        font-size: 55px;
+    }
+    .text-about {
+        font-size: 18px;
+    }
+    #about {
+        height: 1300px;
+    }
+    #contact {
+        height: 2000px;
+    }
 }
   
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -487,7 +516,7 @@ ul {
 #contact {
     background-color: white;
     color: black;
-    height: 100px;
+    height: 25%;
     width: 100%;
     padding-top: 10%;
     padding-bottom: 20%;
