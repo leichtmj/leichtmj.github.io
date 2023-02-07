@@ -260,17 +260,12 @@ body {
     .element-parent {
         height: 2500px;
     }
-    #contact {
+    /* #contact {
         height: 2000px;
-    }
+    } */
 }
 
 @media screen and (min-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
     #name {
         font-size: 55px;
     }
