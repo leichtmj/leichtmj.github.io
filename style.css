@@ -36,6 +36,7 @@ a {
 
 body {
     background-color: #0C1233;
+    
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -109,6 +110,17 @@ body {
     margin-top:15px;
 }
 
+#dlCV {
+    background-color: #2E86FE;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    margin-top:15px;
+    float: right;
+}
+
 #text-about > a {
     width: 250px;
 }
@@ -116,6 +128,12 @@ body {
 #knowMore:hover {
     background-color: #2E86FE;
     color: white;
+}
+
+#dlCV:hover {
+    background-color: white;
+    color: #2E86FE;
+    border: solid 2px #2E86FE;
 }
 
 #welcome {
@@ -471,8 +489,8 @@ ul {
     color: black;
     height: 100px;
     width: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 10%;
+    padding-bottom: 20%;
     overflow-y: hidden;
 }
 
@@ -602,10 +620,99 @@ a {
     font-style: italic;
 }
 
-.title {
+.titleSection {
     font-size: 45px;
     font-weight: bold;
     color: white;
     text-align: center;
     margin-bottom: 35px;
+}
+
+.padbt{
+}
+
+#contactList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    gap: 50px;
+}
+
+#contactList .contactListElement {
+    position: relative;
+    list-style: none;
+    width:  125px;
+    height: 125px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+}
+
+#contactList .contactListElement:hover{
+    width: 345px;
+}
+
+
+
+#contactList .contactListElement::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 60px;
+    background: linear-gradient(to right top, #051937, #10315c, #1a4c84, #1e68ae, #1b87da);    opacity: 0;
+    transition: 0.8s;
+}
+
+#contactList .contactListElement:hover::before {
+    opacity: 1;
+}
+
+#contactList .contactListElement::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background: linear-gradient(to right top, #051937, #10315c, #1a4c84, #1e68ae, #1b87da);    transition: 0.5s;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0;
+}
+
+#contactList .contactListElement:hover::after {
+    opacity: 0.5;
+}
+
+#contactList .contactListElement ion-icon {
+    font-size: 5.5em;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+#contactList .contactListElement:hover ion-icon {
+    transform: scale(0);
+    color:white;
+}
+
+#contactList .contactListElement span {
+    position: absolute;
+}
+
+#contactList .contactListElement .title {
+    /* font-size: 1.25em; */
+    letter-spacing: 0.1em;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+    color: white;
+}
+
+#contactList .contactListElement:hover .title {
+    transform: scale(1);
+    transition-delay: 0.25s;
 }
