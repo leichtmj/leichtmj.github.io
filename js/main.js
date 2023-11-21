@@ -67,7 +67,7 @@ class Particle {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
         //ctx.arc(x,y,r,startAngle,endAngle,counterclockwise); ^-> sens horaire
-        ctx.fillStyle = '#232a8c';
+        ctx.fillStyle = '#e6d2b7';
         ctx.fill();
     }
 
@@ -124,7 +124,7 @@ function hasshin(){
         let y = (Math.random() * ((window.innerHeight - size * 2) - (size * 2)) + size * 2); //position y random entre 0 et la largeur du canvas
         let directionX = (Math.random() * 1.5) - 1.5; //direction x random entre -2.5 et 2.5
         let directionY = (Math.random() * 1.5) - 1.5; //direction y random entre -2.5 et 2.5
-        let color = '#1523ef';
+        let color = '#e6d2b7';
 
         particleArray.push(new Particle(x, y, directionX, directionY, size, color));
 
@@ -153,7 +153,7 @@ function lien(){
 
             if(distance < (canvas.width/7) * (canvas.height/7)){//si assez proche
                 opacityValue = 1 - (distance/20000);
-                ctx.strokeStyle = 'rgba(21,35,239,'+opacityValue+')';
+                ctx.strokeStyle = 'rgba(230,210,183,'+opacityValue+')';
                 ctx.beginPath();
                 ctx.moveTo(particleArray[a].x, particleArray[a].y);
                 ctx.lineTo(particleArray[b].x, particleArray[b].y);

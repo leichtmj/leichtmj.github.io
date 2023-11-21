@@ -35,7 +35,7 @@ a {
 }
 
 body {
-    background-color: #0C1233;
+    background-color: #311c02;
     
 }
 
@@ -67,15 +67,15 @@ body {
 } */
 
 #contactH {
-    color: #2E86FE;
-    border: solid 2px #2E86FE;
+    color: #e6d2b7;
+    border: solid 2px #e6d2b7;
     border-radius: 25px;
     /* padding: 10px; */
 }
 
 #about {
     height: 900px;
-    color: #0C1233;
+    color: #311c02;
     background-color: white;
 }
 
@@ -203,7 +203,7 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #0C1233;
+    background-color: #311c02;
     overflow: hidden;
 }
   
