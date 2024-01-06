@@ -1,0 +1,290 @@
+{
+  "locale": {
+    "en": "Anglais",
+    "fr": "Français"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Expériences",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "home": {
+    "header": "Bienvenue bande de gueux",
+    "created_by": "JL - 2023"
+  },
+  "about": {
+    "header": "A propos de moi",
+    "cv_title":"Télécharger mon CV",
+    "cv_path":"src/assets/CVs/LEICHTMANN_JIMMY_CV_FR.pdf"
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "softwares": [
+      {
+        "title": "C#",
+        "src":"src/assets/skills/C_sharp.svg"
+      },
+      {
+        "title": "Python",
+        "src":"src/assets/skills/Python.svg"
+      },
+      {
+        "title": "Git",
+        "src":"src/assets/skills/Git.svg"
+      },
+      {
+        "title": "WinUI",
+        "src":"src/assets/skills/Logo-winui.svg"
+      },
+      {
+        "title": "Docker",
+        "src":"src/assets/skills/logo-docker.svg"
+      }
+    ],
+    "back": [
+      {
+        "title": "C#",
+        "src":"src/assets/skills/C_sharp.svg"
+      },
+      {
+        "title": "Python",
+        "src":"src/assets/skills/Python.svg"
+      },
+      {
+        "title": "Git",
+        "src":"src/assets/skills/Git.svg"
+      },
+      {
+        "title": "Flask",
+        "src":"src/assets/skills/Flask.svg"
+      },
+      {
+        "title": "JavaScript",
+        "src":"src/assets/skills/js.svg"
+      },
+      {
+        "title": "MongoDB",
+        "src":"src/assets/skills/MongoDB.svg"
+      },
+      {
+        "title": "PostgreSQL",
+        "src":"src/assets/skills/pgsql.svg"
+      },
+      {
+        "title": "InfluxDB",
+        "src":"src/assets/skills/influxdb.svg"
+      },
+      {
+        "title": "PHP",
+        "src":"src/assets/skills/php.svg"
+      },
+      {
+        "title": "ExpressJS",
+        "src":"src/assets/skills/express.webp"
+      },
+      {
+        "title": "Laravel",
+        "src":"src/assets/skills/logo-laravel.svg"
+      }
+    ],
+    "front": [
+      {
+        "title": "HTML",
+        "src":"src/assets/skills/Html.svg"
+      },
+      {
+        "title": "CSS",
+        "src":"src/assets/skills/Css.svg"
+      },
+      {
+        "title": "JavaScript",
+        "src":"src/assets/skills/js.svg"
+      },
+      {
+        "title": "JQuery",
+        "src":"src/assets/skills/JQuery.svg"
+      },
+      {
+        "title": "Tailwind",
+        "src":"src/assets/skills/Tailwind.svg"
+      },
+      {
+        "title": "VueJS",
+        "src":"src/assets/skills/vue.svg"
+      },
+      {
+        "title": "AnimeJS",
+        "src":"src/assets/skills/animejs.webp"
+      },
+      {
+        "title": "PHP",
+        "src":"src/assets/skills/php.svg"
+      },
+      {
+        "title": "ExpressJS",
+        "src":"src/assets/skills/express.webp"
+      },
+      {
+        "title": "Blazor",
+        "src":"src/assets/skills/blazor.svg"
+      }
+    ],
+    "design": [
+      {
+        "title": "Figma",
+        "src":"src/assets/skills/Figma.svg"
+      },
+      {
+        "title": "Aseprite",
+        "src":"src/assets/skills/Aseprite.svg"
+      },
+      {
+        "title": "Photoshop",
+        "src":"src/assets/skills/Photoshop.svg"
+      },
+      {
+        "title": "Premiere Pro",
+        "src":"src/assets/skills/premierepro.svg"
+      },
+      {
+        "title": "Blender",
+        "src":"src/assets/skills/blender.svg"
+      }
+    ]
+  },
+  "projects": 
+  {
+    "title": "Mes expériences",
+    "data": [
+              {
+              "id": 1,
+              "year": "2023",
+              "season": "Décembre - Janvier 2024 : Portfolio",
+              "imageSrc": "https://imgur.com/P45Bwb1.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Ce projet est un site portfolio me permettant de présenter les différents projets informatiques que j'ai effectué.",
+              "tags": [{
+                "title":"VueJS - ",
+                "src":"https://vuejs.org/"
+                },{
+                  "title":"Tailwind",
+                  "src":"https://tailwindcss.com/"                
+                  }],
+                "isActive": false
+              }, {
+              "id": 2,
+              "year": "2023",
+              "season": "Novembre - Janvier 2024 : Projet universitaire",
+              "imageSrc": "https://imgur.com/U30rNFW.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Dans ce projet, nous avons mis en place des capteurs (température, CO2, luminosité) dans le département INFO de l'IUT d'Annecy. Une Raspberry Pi 4 comportant différents conteneurs Docker en récupérait les données, puis envoyait les données dans une base InfluxDB. Le but final de l'application était le développement d'un modèle de données permettant de visualiser les différentes données et de prédire la température à venir dans les x minutes.",
+              "tags": [{
+                "title":"Docker - ",
+                "src":"https://www.docker.com/"
+                },{
+                  "title":"C# - ",
+                  "src":"https://learn.microsoft.com/en-us/dotnet/csharp/"
+                },{
+                  "title":"InfluxDB - ",
+                  "src":"https://www.influxdata.com/"
+                },{
+                  "title":"Flask - ",
+                  "src":"https://flask.palletsprojects.com/en/3.0.x/"
+                },{
+                  "title":"Tailwind",
+                  "src":"https://tailwindcss.com/"
+                }],              
+                "isActive": false
+              },{
+              "id": 3,
+              "year": "2023",
+              "season": "Juillet - Septembre : Bénévolat chez POWINOO",
+              "imageSrc": "https://imgur.com/OPiRnMc.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Effectuer des tests logiciels, Maintenir à jour le réseau informatique de la plateforme POWINOO, Maintenir à jour le logiciel SaaS, accessible gratuitement depuis la plateforme en ligne via l'URL : https://www.powinoo.ovh Effectuer les mises à jours des patchs et des correctifs logiciels, pour maintenir la solution informatique à jour Mettre à jour les fonctionnalites présentes sur le site et faire évoluer la solution en prenant en compte les retours utilisateurs",
+              "tags": [{
+                "title":"OVH - ",
+                "src":"https://www.ovhcloud.com/fr/"
+                },{
+                  "title":"C# - ",
+                  "src":"https://learn.microsoft.com/en-us/dotnet/csharp/"
+                },{
+                  "title":"React - ",
+                  "src":"https://react.dev/"
+                },{
+                  "title":"NodeJS",
+                  "src":"https://nodejs.org/en/about"
+                }],              
+                "isActive": false
+            },{
+              "id": 4,
+              "year": "2023",
+              "season": "Été 2022 / 2023 : Fête du lac d'Annecy",
+              "imageSrc": "https://imgur.com/T8nR2pG.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Chaque été, la ville d'Annecy recherche plus de 400 vacataires en soutien pour l'organisation de la fête du lac d'Annecy. Habitant dans la Venise des Alpes depuis mon enfance, Je suis engagé depuis plus de deux ans en tant qu'agent d'accueil. Mes principales missions consistent à renseigner et guider les spectateurs sur le site et aux points bus Sibra et SNCF.",
+              "tags": [{
+                "title":"Site officiel",
+                "src":"https://www.annecy.fr/213-fete-du-lac-d-annecy.htm"
+                }],
+                "isActive": false
+            },{
+              "id": 5,
+              "year": "2023",
+              "season": "Avril - Juin : Stage chez KHEOPS Technologies",
+              "imageSrc": "https://imgur.com/JL1vjyP.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Ma 2ème année de BUT Informatique m'a donné l'opportunité d'effectuer un stage chez KHEOPS Technologies en tant qu'Assistant Qualité Digitale. Dans le but de stabiliser les logiciels et améliorer la qualité du produit ClevEHR (versions trimestrielles), ma mission consistait à mettre en place un outil d’automatisation de tests via la rédaction et le paramétrage de scripts.",
+              "tags": [{
+                "title":"Eggplant Functional - ",
+                "src":"https://en.wikipedia.org/wiki/Eggplant_Functional"
+                },{
+                  "title":"SenseTalk",
+                  "src":"https://docs.eggplantsoftware.com/studio/stk-about-sensetalk/"
+                }],              
+                "isActive": false
+            },{
+              "id": 6,
+              "year": "2023",
+              "season": "Mars - Avril : Développement d'un site web clone",
+              "imageSrc": "https://imgur.com/QEknUuq.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Pour ce projet par groupe de 5, nous avons décidé de recréer le site web de Tesla. Ainsi, nous avons dû développer trois éléments clés : une base de données PostgreSQL, une API en C# .NET Framework et un client VueJS. La base de données a été créée selon l'approche 'Code-First' : nous avons d'abord créé les modèles dans notre API, puis nous les avons utilisés pour générer les tables et les associations entre elles. L'API est codée en C# et intègre des patterns de conception tels que Singleton et Repository. ",
+              "tags": [{
+                "title":"VueJS - ",
+                "src":"https://vuejs.org/"
+                },{
+                  "title":"C# - ",
+                  "src":"https://learn.microsoft.com/en-us/dotnet/csharp/"
+                },{
+                  "title":"PostgreSQL",
+                  "src":"https://www.postgresql.org/"
+                }],              
+              "isActive": false
+            },{
+              "id": 7,
+              "year": "2022",
+              "season": "Janvier : Développement d'un jeu en 2D",
+              "imageSrc": "https://imgur.com/POjzE19.png",
+              "altText": "Season 13 Image",
+              "title": "Season 13",
+              "description": "Pour mettre en application les notions apprises pendant mon 1er semestre de BUT, nous avons dû, par groupe de 3, développer un jeu en 2D en utilisant le langage C# ainsi que le framework Monogame. Ce jeu contenait un système de combat dactylographique, où le joueur devait taper les lettres et mots affichés à l'écran, et gagnait des points en fonction de la rapidité de ses frappes.",
+              "tags": [{
+                "title":"C# - ",
+                "src":"https://learn.microsoft.com/en-us/dotnet/csharp/"
+                },{
+                  "title":"Monogame",
+                  "src":"https://monogame.net/"
+                }],
+              "isActive": false
+            }]
+    }
+}
