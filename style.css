@@ -99,7 +99,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #fefaf1;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -346,14 +346,17 @@ section {
 
 article {
   display: flex;
+  align-items: center; /* Aligne verticalement l'icône et le texte */
   width: 10rem;
-  justify-content: space-around;
   gap: 0.5rem;
 }
 
 article .icon {
-  cursor: default;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
+
 
 /* PROJECTS SECTION */
 
